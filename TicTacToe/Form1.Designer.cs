@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            label1 = new Label();
-            label2 = new Label();
+            playerLabel = new Label();
+            cpuLabel = new Label();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -44,28 +44,28 @@
             CPUTimer = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
-            // label1
+            // playerLabel
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Green;
-            label1.Location = new Point(26, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(108, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Player Wins: ";
+            playerLabel.AutoSize = true;
+            playerLabel.BackColor = Color.Transparent;
+            playerLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            playerLabel.ForeColor = Color.Green;
+            playerLabel.Location = new Point(26, 9);
+            playerLabel.Name = "playerLabel";
+            playerLabel.Size = new Size(108, 21);
+            playerLabel.TabIndex = 0;
+            playerLabel.Text = "Player Wins: ";
             // 
-            // label2
+            // cpuLabel
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(192, 0, 0);
-            label2.Location = new Point(364, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(92, 21);
-            label2.TabIndex = 1;
-            label2.Text = "CPU Wins: ";
+            cpuLabel.AutoSize = true;
+            cpuLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cpuLabel.ForeColor = Color.FromArgb(192, 0, 0);
+            cpuLabel.Location = new Point(364, 9);
+            cpuLabel.Name = "cpuLabel";
+            cpuLabel.Size = new Size(92, 21);
+            cpuLabel.TabIndex = 1;
+            cpuLabel.Text = "CPU Wins: ";
             // 
             // button1
             // 
@@ -199,8 +199,8 @@
             Controls.Add(button7);
             Controls.Add(button4);
             Controls.Add(button1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(cpuLabel);
+            Controls.Add(playerLabel);
             Name = "Form1";
             Text = "Tic Tac Toe Game";
             ResumeLayout(false);
@@ -209,8 +209,8 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private Label playerLabel;
+        private Label cpuLabel;
         private Button button1;
         private Button button2;
         private Button button3;

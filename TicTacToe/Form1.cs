@@ -66,7 +66,7 @@ namespace TicTacToe
                 CPUTimer.Stop();
                 MessageBox.Show("Player Wins!");
                 playerWinCount++;
-                label1.Text = "Player Wins: " + playerWinCount;
+                playerLabel.Text = "Player Wins: " + playerWinCount;
                 RestartGame();
             } 
             else if (button1.Text == "O" && button2.Text == "O" && button3.Text == "O"
@@ -82,7 +82,7 @@ namespace TicTacToe
                 CPUTimer.Stop();
                 MessageBox.Show("CPU Wins!");
                 cpuWinCount++;
-                label2.Text = "CPU Wins: " + cpuWinCount;
+                cpuLabel.Text = "CPU Wins: " + cpuWinCount;
                 RestartGame();
             }
         }
